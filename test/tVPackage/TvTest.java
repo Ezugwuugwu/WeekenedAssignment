@@ -47,10 +47,10 @@ public class TvTest {
         tv.increase_Volume();
         tv.increase_Volume();
         tv.increase_Volume();
+        tv.increase_Volume();//increement stops here, after the maximum value is reached
         tv.increase_Volume();
         tv.increase_Volume();
-        tv.increase_Volume();
-        int vol = tv.get_Min_Volume();//the result of volume after increasing by 3.
+        int vol = tv.get_Min_Volume();
         assertEquals(5,vol);
     }
     @Test
@@ -71,18 +71,15 @@ public class TvTest {
         tv.lower_Volume();
         tv.lower_Volume();
         tv.lower_Volume();
-        tv.lower_Volume();
-        tv.lower_Volume();
-        tv.lower_Volume();
         int vol = tv.get_Min_Volume();
-        assertEquals(0, vol);
+        assertEquals(2, vol);
     }
 
 
     @Test
     public void move_Channels_Forward(){
         TvClass tv = new TvClass("Samsung");
-        //the default channel is 1 already and increase from that point
+        //the default channel is 1 already and increases from that point
 
         tv.move_Channel_Forward();
         tv.move_Channel_Forward();
