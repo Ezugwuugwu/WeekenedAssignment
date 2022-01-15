@@ -32,6 +32,6 @@ public class ClockClass {
         clock.setTime(23,35,23);
         System.out.println("Time after calling the set method - "+ clock.to24Hours());
 
-        System.out.println("The 24 hours - "+clock.to12Hours());
+        System.out.println("The 24 hours format - "+clock.to12Hours());
     }
 }

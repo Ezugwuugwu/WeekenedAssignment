@@ -29,6 +29,7 @@ public class TvTest {
     public void turnOff(){
         TvClass tv = new TvClass("Samsung");
         tv.turnOff();
+
     }
 
     @Test
@@ -102,4 +103,29 @@ public class TvTest {
         int getchannel = tv.getChannel();
         assertEquals(8,getchannel);
     }
+
+    @Test
+    public  void minimumNumberInArrayElements(){
+        TvClass tv = new TvClass("Samsung");
+        int [] numbers = {1,2,3,54,5,};
+
+       int mini = tv.minimum_Number_Of_Array_Elements(numbers);
+        assertEquals(1, mini);
+    }
+    @Test
+    public void maximumNumberInArrayElement(){
+        TvClass tv = new TvClass("Samsung");
+        int [] numbers = {34,56,67,7,8};
+       int max = tv.maximum_number_In_An_Array(numbers);
+        assertEquals(67, max);
+    }
+
+    @Test
+    public void average_Of_Array_Elements(){
+        TvClass tv = new TvClass("Samsung");
+        int [] numbers = {2,4,6,7,8,9};
+      double average =  tv.average_Of_Array_Elements(numbers);
+        assertEquals(6.0,average);
+    }
+
 }

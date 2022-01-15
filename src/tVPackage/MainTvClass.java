@@ -11,12 +11,14 @@ public class MainTvClass {
         String key = """
                 enter 1 to turn on TV
                 """;
+
         System.out.println(key);
         int power = input.nextInt();
         switch (power){
             case 1:
                 if (power == 1) {
                     myTv.turnOn();
+
                     if (myTv.isOn() == true) {
                         System.out.println(myTv.isOn() + ", Tv is on");
                     } else

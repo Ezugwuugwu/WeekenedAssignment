@@ -19,21 +19,21 @@ public class Factorials {
 
     public double one_Factorial(){
         for (int i =1; i <= 1; i++){
-           total = total * 1;
+           total = total * i;
         }
         return total * 1.0;
     }
 
     public double two_Factorial(){
         for (int i =1; i <= 2; i++){
-            total = total *1;
+            total = total *i;
         }
         return total * 1.0;
     }
 
     public double three_Factorial(){
         for (int i =1; i < 3; i++){
-            total = total * 1;
+            total = total * i;
         }
         return total * 1.0;
     }

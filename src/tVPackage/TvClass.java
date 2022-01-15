@@ -58,4 +58,35 @@ public class TvClass {
 
         return default_Channel;
     }
+
+    int max;
+    public int minimum_Number_Of_Array_Elements(int [] numbers) {
+
+        int minimuNumber = numbers[0];
+        for (int number: numbers){
+            minimuNumber = Math.min(minimuNumber,number);
+        }
+        return minimuNumber;
+    }
+
+    public int maximum_number_In_An_Array(int[] numbers) {
+        int maximumNumber = numbers[0];
+        for (int number : numbers){
+            maximumNumber = Math.max(maximumNumber,number);
+        }
+        return maximumNumber;
+    }
+
+    public double average_Of_Array_Elements(int [] numbers) {
+        int total =0;
+        double average;
+        for (int number : numbers){
+            total = total +number;
+        }
+        average = (double) total/numbers.length;
+
+        return average;
+    }
+
+
 }
