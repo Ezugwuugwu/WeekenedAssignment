@@ -2,10 +2,12 @@ public class SevenSegmentDisplay {
     private static int[][] values_In_Rows_And_Columns = new  int[5][4];
 
     public static void main(String[] args) {
-        set_Segement_And_Check_Binary_Validity("10110111");
+        set_Segement_And_Check_Binary_Validity("11111111");
+
         displaySegment();
+
     }
-    //END OF MAIN CLASS
+    //END OF MAIN METHOD
 
     public static void set_Segement_And_Check_Binary_Validity(String number){
         if ((number.length()==8) && number.charAt(number.length()-1) == '1'){
@@ -24,7 +26,6 @@ public class SevenSegmentDisplay {
 
 
     public static void setSegment(String numbers) {
-        boolean isValid = true;
             if (Character.getNumericValue(numbers.charAt(0)) == 1) {
                 segment_A();
             }
@@ -59,7 +60,7 @@ public class SevenSegmentDisplay {
         int row,column;
             for (row = 0; row < values_In_Rows_And_Columns.length; row++) {
                 for (column = 0; column < values_In_Rows_And_Columns[row].length; column++){
-                    if (values_In_Rows_And_Columns[row][column] == 1) System.out.print('#');
+                    if (values_In_Rows_And_Columns[row][column] == 1) System.out.print('*');
                     else System.out.print(' ');
                     }
                 System.out.println();
@@ -72,6 +73,7 @@ public class SevenSegmentDisplay {
         values_In_Rows_And_Columns[0][2] = 1;
         values_In_Rows_And_Columns[0][3] = 1;
     }
+
 
     public static void segment_B(){
         values_In_Rows_And_Columns[0][3] = 1;
