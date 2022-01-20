@@ -62,7 +62,6 @@ public class TwelveDaysOfChristmasSong {
                 if (day == 4) System.out.println("Fourt Day");break;
             case 5:
                 if (day == 5) System.out.println("Fift Day");break;
-
         }
     }
 }
