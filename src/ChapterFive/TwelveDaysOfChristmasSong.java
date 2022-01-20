@@ -7,6 +7,8 @@ public class TwelveDaysOfChristmasSong {
         int i =0;
         Scanner input = new Scanner(System.in);
 
+
+
         do {
             System.out.println("Choose the day 1-12");
             int day = input.nextInt();
