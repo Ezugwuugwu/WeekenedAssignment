@@ -2,7 +2,7 @@ package ChapterFive;
 
 import java.util.Scanner;
 
-public class DaimondShapePrinting {
+public class DiamondShapePrinting {
 
     public static void main(String args[])
     {

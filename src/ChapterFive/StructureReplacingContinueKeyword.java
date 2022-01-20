@@ -5,7 +5,7 @@ public class StructureReplacingContinueKeyword {
     public void continue_Statement(){
         for (int counter =1; counter <=10; counter++){
             if (counter == 5){
-                counter++;// integer five skipped
+                counter++;
             }
             System.out.println(counter);
         }

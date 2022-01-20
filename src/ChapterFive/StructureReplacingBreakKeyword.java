@@ -5,7 +5,7 @@ public class StructureReplacingBreakKeyword {
         int counter =0;
            for (counter =1; counter <=10; counter++){
                if (counter ==5){
-                   return;// structure equivalent of break keyword
+                   return;
                }
                System.out.println(counter);
            }

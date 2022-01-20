@@ -1,6 +1,6 @@
 package ChapterFive;
 
-public class FacebookUserBaseGrowth {
+public class FacebookUsersBaseGrowth {
 
     public static void main(String[] args) {
         final double rate = 0.04;
