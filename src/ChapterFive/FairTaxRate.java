@@ -11,7 +11,6 @@ public class FairTaxRate {
         double expenses =0;
         System.out.println("\nNote: To end the program, enter dummy value of -1".toUpperCase());
 
-
         while (expenses != -1 ){
             System.out.println("Expense category");
             String category = input.nextLine();

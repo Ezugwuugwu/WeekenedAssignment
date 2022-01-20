@@ -16,7 +16,6 @@ public class FacebookUsersBaseGrowth {
 
             if (userGrowth >= 1500000000 && userGrowth <1530000000){
                 System.out.println("At "+month+"th month, the users will be upto 1.5billion");}
-
             if (userGrowth == 2000000000){
                 System.out.println("At "+month+"th month, the users will be upto 2billion");
             }

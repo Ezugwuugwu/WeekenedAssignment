@@ -25,35 +25,24 @@ while (true){
                 Select item number to add it to cart
                 """;
     System.out.println(format);
-    int userInput = input.nextInt();
-    if (userInput == 6){
+        int userInput = input.nextInt();
+        if (userInput == 6){
         System.exit(6);
     }
     System.out.println("Enter the quantity to buy");
-    int quantity = input.nextInt();
+        int quantity = input.nextInt();
 
     switch (userInput){
 
-        case 1:
-            totalRetailValue =  quantity * product1;
-//            System.out.println("Total valued retail is "+totalRetailValue);
-            break;
+        case 1: totalRetailValue =  quantity * product1; break;
 
-        case 2:
-            totalRetailValue  = quantity * product2;
-            break;
+        case 2: totalRetailValue  = quantity * product2; break;
 
-        case 3:
-            totalRetailValue = quantity * product3;
-            break;
+        case 3: totalRetailValue = quantity * product3; break;
 
-        case 4:
-            totalRetailValue = quantity * product4;
-            break;
+        case 4: totalRetailValue = quantity * product4; break;
 
-        case 5:
-            totalRetailValue = quantity * product5;
-            break;
+        case 5: totalRetailValue = quantity * product5;break;
     }
     System.out.println("The total valued retail is "+totalRetailValue);
 }

@@ -14,27 +14,22 @@ public class TwelveDaysOfChristmasSong {
             for (i = 1; i <= 12; i++) {
                 switch (day) {
                     case 1:
-                        if (day == 1)
-                            System.out.println("First Day");
+                        if (day == 1) System.out.println("First Day");
                         break;
 
                     case 2:
-                        if (day == 2)
-                            System.out.println("Second Day");
+                        if (day == 2) System.out.println("Second Day");
                         break;
 
                     case 3:
-                        if (day == 3)
-                            System.out.println("Third Day");
+                        if (day == 3) System.out.println("Third Day");
                         break;
 
                     case 4:
-                        if (day == 4)
-                            System.out.println("Fourt Day");
+                        if (day == 4) System.out.println("Fourt Day");
                         break;
                     case 5:
-                        if (day == 5)
-                            System.out.println("Fift Day");
+                        if (day == 5) System.out.println("Fift Day");
                         break;
 
                 }
@@ -42,28 +37,23 @@ public class TwelveDaysOfChristmasSong {
                 for (i = 0; i <= 12; i++) {
                     switch (i) {
                         case 1:
-                            if (day == 1)
-                                System.out.println("Mocking bed - Eminem");
+                            if (day == 1) System.out.println("Mocking bed - Eminem");
                             break;
 
                         case 2:
-                            if (day == 2)
-                                System.out.println("Expensive pain - Meek Mill");
+                            if (day == 2) System.out.println("Expensive pain - Meek Mill");
                             break;
 
                         case 3:
-                            if (day == 3)
-                                System.out.println("Bad Santa - Chillinit");
+                            if (day == 3) System.out.println("Bad Santa - Chillinit");
                             break;
 
                         case 4:
-                            if (day == 4)
-                                System.out.println("Crown of clay - Vector");
+                            if (day == 4) System.out.println("Crown of clay - Vector");
                             break;
 
                         case 5:
-                            if (day == 5)
-                                System.out.println("Drinking and smoking - Future");
+                            if (day == 5) System.out.println("Drinking and smoking - Future");
                     }
                 }
             }

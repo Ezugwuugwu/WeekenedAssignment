@@ -8,7 +8,7 @@ public class SmallestValue {
         int smallest_Number = Integer.MAX_VALUE;
 
         for (int i =1; i <= 5; i++ ){
-            System.out.println("Eneter 5 digits to find the smallest among them");
+            System.out.println("Eneter digit(s) to find the smallest among them");
             int number = input.nextInt();
 
             if (smallest_Number > number){
