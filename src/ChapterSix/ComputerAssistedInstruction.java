@@ -16,10 +16,10 @@ public class ComputerAssistedInstruction {
         for (int i = 1; i <= numberOfQuestion; i++) {
             int firstRandomNumber = random.nextInt(10);
             int secondRandomNumber = random.nextInt(10);
-            question(firstRandomNumber, secondRandomNumber);
+            display_question(firstRandomNumber, secondRandomNumber);
         }
     }
-    public void question(int numberOne, int numberTwo) {
+    public void display_question(int numberOne, int numberTwo) {
         int answer = (numberOne * numberTwo);
         while (studentAnswer != answer) {
             System.out.println("What is the product of " + numberOne + " And " + numberTwo);
