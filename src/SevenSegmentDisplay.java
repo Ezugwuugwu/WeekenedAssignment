@@ -5,9 +5,7 @@ public class SevenSegmentDisplay {
         set_Segement_And_Check_Binary_Validity("11111111");
 
         displaySegment();
-
     }
-    //END OF MAIN METHOD
 
     public static void set_Segement_And_Check_Binary_Validity(String number){
         if ((number.length()==8) && number.charAt(number.length()-1) == '1'){
@@ -20,7 +18,6 @@ public class SevenSegmentDisplay {
                     System.out.println("Power Binary off");
                 }
             }
-
         }
     }
 
@@ -52,7 +49,6 @@ public class SevenSegmentDisplay {
             if (Character.getNumericValue(numbers.charAt(6)) == 1) {
                 segement_G();
             }
-
     }
 
 
