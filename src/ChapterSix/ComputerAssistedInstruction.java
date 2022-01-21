@@ -10,7 +10,8 @@ public class ComputerAssistedInstruction {
     int firstRandomNumber = random.nextInt(10);
     int secondRandomNumber = random.nextInt(10);
 
-    public void random_Question() {
+
+    public void Generate_Random_Question() {
         System.out.println("How many number of questions do you wish to answer");
         int numberOfQuestion = input.nextInt();
         for (int i = 1; i <= numberOfQuestion; i++) {
@@ -19,6 +20,7 @@ public class ComputerAssistedInstruction {
             display_question(firstRandomNumber, secondRandomNumber);
         }
     }
+
     public void display_question(int numberOne, int numberTwo) {
         int answer = (numberOne * numberTwo);
         while (studentAnswer != answer) {
@@ -28,13 +30,14 @@ public class ComputerAssistedInstruction {
                 System.out.println("Very good");
                 break;
             } else {
-                System.out.println("Wrong! Try it again");
+                System.out.println("No! please try once more");
             }
         }
    }
 
+
     public static void main(String[] args) {
         ComputerAssistedInstruction instruction = new ComputerAssistedInstruction();
-        instruction.random_Question();
+        instruction.Generate_Random_Question();
     }
 }
