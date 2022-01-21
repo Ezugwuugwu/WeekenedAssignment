@@ -104,6 +104,7 @@ public class DifficultyLevelComputerAssistedInstruction {
         public static void main (String[]args){
             DifficultyLevelComputerAssistedInstruction difficultLevel = new DifficultyLevelComputerAssistedInstruction();
             difficultLevel.select_Difficult_Level();
+
         }
     }
 
