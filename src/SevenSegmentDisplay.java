@@ -70,7 +70,6 @@ public class SevenSegmentDisplay {
         values_In_Rows_And_Columns[0][3] = 1;
     }
 
-
     public static void segment_B(){
         values_In_Rows_And_Columns[0][3] = 1;
         values_In_Rows_And_Columns[1][3] = 1;

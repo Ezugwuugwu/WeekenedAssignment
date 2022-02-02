@@ -8,18 +8,18 @@ public class TicTakToe {
                 {'O', 'X', 'O'}
         };
 
-//Using enhanced for loop
+
         System.out.println("\nPrinting with the enhanced for loop ");
-        for (char[] outerarray : ticTakToe){
+        for (char[] outerarray : ticTakToe){ //Using enhanced for loop
             for (char innerArray : outerarray){
                 System.out.print(innerArray+"  ");
             }
             System.out.println();
         }
-        //with for loop
+
         System.out.println("\n");
         System.out.println("Printing with the for loop");
-        for (int row =0; row <ticTakToe.length; row++ ){
+        for (int row =0; row <ticTakToe.length; row++ ){    //with for loop
             for (int column =0; column <ticTakToe.length; column++){
                 System.out.print(ticTakToe[row][column]+"  ");
             }
