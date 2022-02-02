@@ -15,7 +15,6 @@ public class ManageNativeItems {
        String itemName = input.next();
         input.nextLine();
 
-
         System.out.println("Enter quantity of items");
         int itemQuantity = input.nextInt();
 
@@ -38,7 +37,6 @@ public class ManageNativeItems {
                     natives.getItemQuantity(),natives.getItemAmount(),natives.getTotalAmountForItem());
             System.out.println();
         }
-
     }
     public void getSumOfAllItemsPurchased(){
         double sum =0;

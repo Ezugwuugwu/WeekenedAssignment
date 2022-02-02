@@ -11,11 +11,9 @@ public class NativeStoreMainClass {
     }
 
     public static void checkOutItems(ManageNativeItems manageNativeItems, Scanner input) {
-
         do {
             System.out.println();
             String format = """
-                        
                         Enter 1 to capture Native Items
                         Enter 2 to  display all items purchased
                         Enter 3 to exit
