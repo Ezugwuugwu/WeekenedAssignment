@@ -15,9 +15,9 @@ public class TwelveDaysOfChristmasSong {
             int day = input.nextInt();
             if (day <= 12) {
             for (i = 1; i <= 12; i++) {
-                display_Questions(day);
+                display_Day(day);
                 for (i = 0; i <= 12; i++) {
-                    display_Answers(i, day);
+                    play_songs(i, day);
                 }
             }
         } else {
@@ -28,40 +28,23 @@ public class TwelveDaysOfChristmasSong {
         }while (true);
     }
 
-    public static void display_Answers(int i, int day) {
+    public static void play_songs(int i, int day) {
         switch (i) {
-            case 1:
-                if (day == 1) System.out.println("Mocking bed - Eminem");break;
-
-            case 2:
-                if (day == 2) System.out.println("Expensive pain - Meek Mill");break;
-
-            case 3:
-                if (day == 3) System.out.println("Bad Santa - Chillinit");break;
-
-            case 4:
-                if (day == 4) System.out.println("Crown of clay - Vector");break;
-
-            case 5:
-                if (day == 5) System.out.println("Drinking and smoking - Future");
+            case 1: if (day == 1) System.out.println("Mocking bed - Eminem");break;
+            case 2: if (day == 2) System.out.println("Expensive pain - Meek Mill");break;
+            case 3: if (day == 3) System.out.println("Bad Santa - Chillinit");break;
+            case 4: if (day == 4) System.out.println("Crown of clay - Vector");break;
+            case 5: if (day == 5) System.out.println("Drinking and smoking - Future");
         }
     }
 
-    public static void display_Questions(int day) {
+    public static void display_Day(int day) {
         switch (day) {
-            case 1:
-                if (day == 1) System.out.println("First Day");break;
-
-            case 2:
-                if (day == 2) System.out.println("Second Day");break;
-
-            case 3:
-                if (day == 3) System.out.println("Third Day");break;
-
-            case 4:
-                if (day == 4) System.out.println("Fourt Day");break;
-            case 5:
-                if (day == 5) System.out.println("Fift Day");break;
+            case 1: if (day == 1) System.out.println("First Day");break;
+            case 2: if (day == 2) System.out.println("Second Day");break;
+            case 3: if (day == 3) System.out.println("Third Day");break;
+            case 4: if (day == 4) System.out.println("Fourt Day");break;
+            case 5: if (day == 5) System.out.println("Fift Day");break;
         }
     }
 }

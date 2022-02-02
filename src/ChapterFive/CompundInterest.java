@@ -15,7 +15,6 @@ public class CompundInterest {
         System.out.printf("%s  %5s  %5s  %6s  %6s  %6s  %6s", "Year", "5% interest","6% interest",
                 "7% interest", "8% interest", "9% interest", "10% interest \n" );
 
-
         for (numberOfYears = 1; numberOfYears <=10; numberOfYears++){
             double fiveYearsAmount = investedAmount * Math.pow(1+five_Percent_Interest_Rate,numberOfYears);
             double sixYearsAmount = investedAmount * Math.pow(1+ six_Percent_Interest_Rate,numberOfYears);
