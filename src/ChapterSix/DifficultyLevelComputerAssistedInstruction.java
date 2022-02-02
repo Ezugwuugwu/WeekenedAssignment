@@ -7,8 +7,8 @@ public class DifficultyLevelComputerAssistedInstruction {
     Scanner input = new Scanner(System.in);
     int studentAnswer = -1;
     SecureRandom randomNumber = new SecureRandom();
-    int correctAnswerCount = 0;
-    int wrongAnswerCount = 0;
+    int correctAnswerCounter = 0;
+    int wrongAnswerCounter = 0;
 
     public void generate_Single_Digit_Random_Questions() {
         for (int i = 1; i <= 10; i++) {
@@ -31,10 +31,10 @@ public class DifficultyLevelComputerAssistedInstruction {
         int studentAnswer = input.nextInt();
         if (studentAnswer == answer) {
             correct_Answer_Message();
-            correctAnswerCount++;
+            correctAnswerCounter++;
         } else {
             wrong_Answer_Message();
-            wrongAnswerCount++;
+            wrongAnswerCounter++;
         }
     }
 
@@ -44,16 +44,16 @@ public class DifficultyLevelComputerAssistedInstruction {
         int studentAnswer = input.nextInt();
         if (studentAnswer == answer) {
             correct_Answer_Message();
-            correctAnswerCount++;
+            correctAnswerCounter++;
         } else {
             wrong_Answer_Message();
-            wrongAnswerCount++;
+            wrongAnswerCounter++;
         }
     }
 
     public void select_Difficult_Level() {
         String format = """
-                Choose difficult level:
+                Choose difficulty level:
                 Enter 1 for level 1
                 Enter 2 for lever 2
                 """;
@@ -69,9 +69,8 @@ public class DifficultyLevelComputerAssistedInstruction {
             }
     }
 
-
     public void student_Performance_Check() {
-        if (correctAnswerCount >= 7.5) {
+        if (correctAnswerCounter >= 7.5) {
             System.out.println("Congratulations! You are ready to go to the next" +
                     "level\n\n" + "Next student proceed to answer questions");
             select_Difficult_Level();
